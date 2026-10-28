@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyroute-mtr"
+version = "0.1.0"
+description = "A standard-library IPv4 ICMP traceroute command-line utility"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+pyroute-mtr = "pyroute_mtr.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pyroute_mtr*"]
